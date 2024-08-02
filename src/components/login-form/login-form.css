@@ -1,0 +1,37 @@
+.formContainer {
+  min-width: 330px;
+}
+
+
+@media (max-width:1024px){
+  .formContainer {
+   margin-top:50px !important;
+  }
+}
+
+.userImage{
+  width: 150px;
+}
+.inputText, .inputPassword,.buttonLogin,.formText{
+min-width: 230px;
+height: 34px;
+margin-top: 3.5%;
+}
+.buttonLogin{
+  background-color: #FF725E;
+  min-width: 230px;
+}
+
+.isForgetText{
+  color: #FF725E;
+  font-size: 12px;
+  font-weight: bold;
+
+
+}
+.remeberText,.noTickButton{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/**/

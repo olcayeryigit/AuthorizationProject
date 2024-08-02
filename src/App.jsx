@@ -7,6 +7,8 @@
 Action ve Types zorunlu değildir
 */
 
+import { AppRouter } from "./router"
+
 
 //DummyJsonın auth apisi kullanalım :Login user and get token
 //login işlemi ve mevcut kullanıcıyı getirme
@@ -14,10 +16,7 @@ Action ve Types zorunlu değildir
 
 function App() {
 
-  return (
-    <div>
-        
-    </div>
+  return ( <AppRouter/>
   )
 }
 

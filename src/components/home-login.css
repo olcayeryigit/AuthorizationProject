@@ -1,0 +1,40 @@
+
+
+@media (min-width: 1025px) {
+  .homeContainer{
+    padding-left: 5% !important;
+  }
+}
+
+@media (min-width:769px){
+  .homeContainer{
+margin-top: 2rem !important;  
+}
+}
+
+@media (max-width: 1024px) {
+  .textContainer{
+    padding-top: 100px !important;
+  }
+}
+
+
+@media (min-width:500px){
+  .homeContainer{
+margin-top: 2rem !important;  
+}
+}
+
+
+.textContainer{
+  max-width: 330px;
+  padding-top: 15px;
+  color: #E8E8E8;
+}
+.image1{
+  max-width: 60%;
+}
+
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
