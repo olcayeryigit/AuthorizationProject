@@ -5,12 +5,12 @@
 
 @media (max-width:1024px){
   .formContainer {
-   margin-top:50px !important;
+   margin-top:80px !important;
   }
 }
 
 .userImage{
-  width: 150px;
+  width: 10rem;
 }
 .inputText, .inputPassword,.buttonLogin,.formText{
 min-width: 230px;

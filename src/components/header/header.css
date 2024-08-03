@@ -1,42 +1,69 @@
+
 .navbar {
-  height: 4rem;
   background-color: #374952;
+  height: 4.6rem;
 }
 
-@media (max-width: 769px) {
-  .nav {
-    margin-left: 34% !important;
-  }
+
+.nav{
+    max-height: 100px;
+    background-color: #374952;
+
 }
 
-.nav {
-  margin-left: 24%;
-}
 .logo {
   position: absolute;
 }
 
 @media (min-width: 768px) {
   .logo {
-    width: 10rem;
-    margin-top: -3.8rem;
+    width: 9.5rem;
+    margin-top: -1.7rem;
     margin-left: 1rem;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 281px)  {
   .logo {
-    width: 6rem;
-    margin-top: -2.7rem;
-    margin-left: 1rem;
+    width: 7.5rem;
+    margin-top: -1.2rem;
+    margin-left: 1.5rem;
   }
 }
+
+@media (max-width: 280px) {
+  .logo {
+    width:6rem;
+    margin-top:-0.4rem ;
+  }
+}
+
+
 
 .linkHome {
   color: hsl(0, 0%, 96%) !important;
-  font-size: 15px;
+  font-size: 1rem !important; 
+
 }
+
+
+@media (min-width: 992px) {
+  .linkHome {
+    margin-left: 20rem;
+  }
+}
+
+
 .linkLogin {
   color: #f5f5f5 !important;
-  font-size: 15px !important;
+  font-size: 1rem !important;
+}
+/**/
+.navbar-toggler {
+  background-color: #9da8ad !important; /* Toggle arka plan rengini beyaz yapar */
+  border: 3px solid  #9da8ad !important; /* İsteğe bağlı: Kenarlık rengi */
+}
+
+.navbar-toggler-icon{
+  background-color: #9da8ad;
 }

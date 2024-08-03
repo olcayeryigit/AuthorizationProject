@@ -9,11 +9,11 @@ const HomeLogin = () => {
   return (
     <Container
       fluid
-      className="homeContainer d-flex justify-content-center align-items-center  flex-wrap  "
+      className="homeContainer d-flex justify-content-center  align-items-center  flex-wrap  "
     >
       {pathname=="/" &&
       <div className="textContainer">
-        <p className="fs-4 fw-bold fs-sm-2">Can Dostlarımızın Sağlığı İçin</p>
+        <p className="fw-bold ">Can Dostlarımızın Sağlığı İçin</p>
         <p className="mt-4">
           Can Dostum Veteriner Kliniği olarak, evcil hayvanlarınızın sağlığı ve
           refahı için kapsamlı ve nitelikli hizmetler sunuyoruz. Teşhis, tedavi,
@@ -22,7 +22,7 @@ const HomeLogin = () => {
           karşılıyoruz. Uzman ekibimiz, sevimli dostlarınızın en iyi bakımı
           almasını sağlamak için her zaman yanınızda.
         </p>
-        <h6>Onların sağlığı için buradayız!</h6>
+        <p>Onların sağlığı için buradayız!</p>
       </div>
    
     } 
