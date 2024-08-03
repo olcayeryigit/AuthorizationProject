@@ -1,14 +1,11 @@
-
 .navbar {
   background-color: #374952;
-  height: 4.6rem;
+  height: 4.6em;
 }
 
-
-.nav{
-    max-height: 100px;
-    background-color: #374952;
-
+.nav {
+  max-height: 100px;
+  background-color: #374952;
 }
 
 .logo {
@@ -23,7 +20,7 @@
   }
 }
 
-@media (max-width: 767px) and (min-width: 281px)  {
+@media (max-width: 767px) and (min-width: 281px) {
   .logo {
     width: 7.5rem;
     margin-top: -1.2rem;
@@ -33,19 +30,15 @@
 
 @media (max-width: 280px) {
   .logo {
-    width:6rem;
-    margin-top:-0.4rem ;
+    width: 6rem;
+    margin-top: -0.4rem;
   }
 }
 
-
-
 .linkHome {
   color: hsl(0, 0%, 96%) !important;
-  font-size: 1rem !important; 
-
+  font-size: 1rem !important;
 }
-
 
 @media (min-width: 992px) {
   .linkHome {
@@ -53,17 +46,32 @@
   }
 }
 
-
 .linkLogin {
   color: #f5f5f5 !important;
   font-size: 1rem !important;
 }
+
+
+@media (max-width: 860px) and (min-width: 769px) {
+  .linkHome,
+  .linkLogin {
+    padding-left: 5% !important;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 300px) {
+  .linkHome,
+  .linkLogin {
+    padding-left: 4% !important;
+  }
+}
+
 /**/
 .navbar-toggler {
   background-color: #9da8ad !important; /* Toggle arka plan rengini beyaz yapar */
-  border: 3px solid  #9da8ad !important; /* İsteğe bağlı: Kenarlık rengi */
+  border: 3px solid #9da8ad !important; /* İsteğe bağlı: Kenarlık rengi */
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   background-color: #9da8ad;
 }

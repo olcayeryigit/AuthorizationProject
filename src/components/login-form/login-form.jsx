@@ -5,7 +5,7 @@ import { FaRegSquare } from "react-icons/fa";
 import { FaRegSquareCheck } from "react-icons/fa6";
 const LoginForm = () => {
   return (
-    <div className="formContainer d-flex flex-column align-items-center ">
+    <div className="formContainer d-flex flex-column align-items-center">
       <Image src={userImage} className="userImage" />
 
       <h5 className="fw-bold">Giriş</h5>

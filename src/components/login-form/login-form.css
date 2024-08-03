@@ -1,17 +1,40 @@
 .formContainer {
-  min-width: 330px;
+width: 330px;
 }
 
 
-@media (max-width:1024px){
+
+@media (max-width:912px) and (min-width:500px){
   .formContainer {
-   margin-top:80px !important;
+   margin-top:5rem !important;
+  }
+}
+
+
+
+@media(max-width:500px) and (min-width:375px){
+  .formContainer {
+   margin-top:6rem !important;
+  }
+}
+
+@media(max-width:375px){
+  .formContainer {
+   margin-top:5.4rem !important;
   }
 }
 
 .userImage{
   width: 10rem;
 }
+
+@media (min-width:1025px){
+  .userImage{
+    margin-top: 5rem;
+  }
+}
+
+
 .inputText, .inputPassword,.buttonLogin,.formText{
 min-width: 230px;
 height: 34px;
