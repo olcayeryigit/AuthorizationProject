@@ -8,11 +8,18 @@ import * as Yup from "yup";
 import { RiErrorWarningFill } from "react-icons/ri";
 import { getAuthUser, login } from "../../api/auth";
 import { useState } from "react";
+import { useStore } from "../../store";
+import { userLogin } from "../../store/auth/action";
+import { useNavigate } from "react-router-dom";
 
 //Formik taglerini kullanmadan, HTML tagleri ile formikin yardımcı fonksiyonlarından faydalanalım
 const LoginForm = () => {
   const [buttonClassName, setButtonClassName] = useState("");
   const [error, setError] = useState(null);
+  const navigate=useNavigate();
+  /**dispatchUser ı kullanabilmek için oluşturduğumuz useStore hook'unu getirelim ve userı login işleminden sonra dispatchUser ile güncelleyelim*/
+const {dispatchUser}=useStore();
+
 
   const handleMouseOver = (e) => {
     console.log(e.target.disabled);
@@ -72,7 +79,10 @@ const LoginForm = () => {
       const user =await getAuthUser(); 
       console.log(user);
       setError(null);
-
+//*!!!!!!!dispatchUser ve action ile user güncelleme işlemi, güncelleme yaptıktan sonra kullanıcıyı anasayfaya yönlendirelim */
+dispatchUser(userLogin(user));
+navigate("/");
+/**headera gidip giriş için karşılama yapalım */
     } catch (err) {
       //hata olması durumunda hatayı kullanıcıyla paylaşalım, bunun için yukarda bir error statei tanımlayalım
       console.log(err);

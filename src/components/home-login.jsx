@@ -11,6 +11,7 @@ const HomeLogin = () => {
       fluid
       className="homeContainer d-flex justify-content-center  align-items-center  flex-wrap  "
     >
+
       {pathname=="/" &&
       <div className="textContainer">
         <p className="fw-bold fs-4">Can Dostlarımızın Sağlığı İçin</p>

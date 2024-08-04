@@ -8,6 +8,7 @@ Action ve Types zorunlu değildir
 */
 
 import { AppRouter } from "./router"
+import { StoreProvider } from "./store"
 
 
 //DummyJsonın auth apisi kullanalım :Login user and get token
@@ -16,7 +17,11 @@ import { AppRouter } from "./router"
 
 function App() {
 
-  return ( <AppRouter/>
+  return ( 
+  <StoreProvider>
+  <AppRouter/>
+</StoreProvider>
+
   )
 }
 
