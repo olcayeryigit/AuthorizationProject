@@ -30,7 +30,7 @@ width: 330px;
 
 @media (min-width:1025px){
   .userImage{
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -40,9 +40,27 @@ min-width: 230px;
 height: 34px;
 margin-top: 3.5%;
 }
+/*formikErrorStyle*/
+.errorIcon{
+margin-left: -30px;
+margin-top: 13px;
+color: #ff6752;
+font-size: 25px;
+
+}
+
+/**/
 .buttonLogin{
   background-color: #FF725E;
   min-width: 230px;
+}
+
+.button-color1{
+  background-color: #FF725E;
+}
+
+.button-color2{
+  background-color: #fd9696;
 }
 
 .isForgetText{
@@ -56,5 +74,11 @@ margin-top: 3.5%;
   font-size: 12px;
   font-weight: bold;
 }
-
+.alert-login{
+  min-width: 230px;
+font-size: small;
+background-color: #ffc0b8;
+color: rgb(102, 0, 0);
+font-weight: 500;
+}
 /**/
